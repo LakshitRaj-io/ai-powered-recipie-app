@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.title("🍽️ Free Recipe Finder with TheMealDB")
+st.title("🍽️ Free Recipe Finder by Lakshit Raj")
 
 search_term = st.text_input("Enter dish name to search:", "")
 
@@ -41,3 +41,6 @@ if search_term:
             st.markdown("---")
     else:
         st.warning("No meals found. Try another search term.")
+#footer
+st.markdown("---")
+st.markdown("### 👨‍🍳 Application Created by Lakshit Raj using free open source models so not all dishes are available but most are.")
